@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>DIY guide</title>
+        <meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Demo CSS -->
+        <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
+    </head>
+
+    <body class="loading">
+        <div id="container" class="cf">
+            <header role="navigation"> 
+                <h1>Buy a Package via APP</h1>
+                <h3 class="nav-header">Please select the option you need then follow the picture steps</h3>
+                <nav>
+                    <ul>
+                        <li><a href="en_US.html">SIM Sticker Installation</a></li>
+                        <li><a href="firsttime.en.html">First Usage</a></li>
+                        <li><a href="reuse.en.html">Reuse Steps for Travel Abroad</a></li>
+                        <li class="active"><a href="buy.en.html">Buy a Package via APP</a></li>
+                        <li><a href="switch.en.html">Activate the Purchased Package via APP</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="main" role="main">
+                <section class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                            <img src="images/buy.step1.en@2x.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/buy.step2.en@2x.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/buy.step3.en@2x.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/buy.step4.en@2x.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/buy.step5.en@2x.jpg" />
+                        </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+
+        <script>
+            window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')
+        </script>
+
+        <!-- FlexSlider -->
+        <script defer src="js/jquery.flexslider.js"></script>
+
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    start: function(slider) {
+                        $('body').removeClass('loading');
+                    }
+                });
+            });
+        </script>
+
+        <!-- Optional FlexSlider Additions -->
+        <script src="js/jquery.easing.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script defer src="js/demo.js"></script>
+    </body>
+</html>
